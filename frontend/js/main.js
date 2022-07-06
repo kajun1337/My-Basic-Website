@@ -6,7 +6,11 @@
        	------------------------------*/
 
 	$(window).on('load',function(){
-		$('.loading').fadeOut();
+		$('.loading').fadeIn(2000);
+		setInterval(function(){
+			$('.loading').fadeOut();
+		},2000)
+		
 	});
 
        /*----------------------------
